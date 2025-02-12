@@ -1,8 +1,0 @@
-{C:/Users/Administrator/Desktop/DSD_2023_EE_153/DSD_2023_EE_153/lab 3/rtl.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/Administrator/Desktop/DSD_2023_EE_153/DSD_2023_EE_153/lab 3/rtl.sv}
-QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
--- Compiling module lab_3
-
-Top level modules:
-	lab_3
-
-} {} {}}

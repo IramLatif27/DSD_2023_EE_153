@@ -1,20 +1,18 @@
-
-
-module lab_3_tb();
+module full_adder_tb();
     logic m;
     logic n;
     logic o;
-    logic p;
-    logic q;
+    logic x;
+    logic y;
 
 localparam period = 10;
 
-lab_3 bct (
+full_adder bct (
     .a(m),
     .b(n),
     .c(o),
-    .x(p),
-    .y(q)
+    .sum(x),
+    .carry(y)
 );
 
 // Provide different combinations of the inputs to check validity of code
@@ -41,9 +39,7 @@ end
 
 initial
 begin
-    $monitor("x=%b, y=%b, a=%b, b=%b, c=%b", p,q,m,n,o);
+    $monitor("sum=%p, carry=%b, a=%b, b=%b, c=%b", x,y,m,n,o);
 end
 
 endmodule
-
-
