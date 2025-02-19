@@ -8,8 +8,8 @@ module lab_3(
     output logic x,
     output logic y
     );
-    
-    
+    logic not_out;
+    assign not_out = ~c;
     assign x = (~ c) ^ (a | b);
     assign y = (a|b) & (~(a & b)^(a|b));
 endmodule
