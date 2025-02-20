@@ -9,7 +9,6 @@
 * 1 code file (.sv)
 * 1 constraint file (.xdc)
 * 1 testbench file(.sv)
-* 3 circuit files (.io)
 
 ### Report
 ### Task 1
