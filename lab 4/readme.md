@@ -8,6 +8,7 @@
 
 * 1 code file (.sv)
 * 1 constraint file (.xdc)
+* 1 testbench file(.sv)
 
 ### Report
 ### Task 1
