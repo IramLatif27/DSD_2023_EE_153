@@ -4,25 +4,15 @@ module lab5_struct (
     output logic [7:0] seg,
     output logic [7:0] AN
 );
-
     assign seg[0] = (~num[3] & ~num[2] & ~num[1] & num[0]) | (~num[3] & num[2] & ~num[1] & ~num[0]) | (num[3] & num[2] & ~num[1] & num[0]) | (num[3] & ~num[2] & num[1] & num[0]);
-
     assign seg[1] = (num[3] & num[2] & ~num[0]) | (~num[3] & num[2] & ~num[1] & num[0]) | (num[3] & num[1] & num[0]) | (num[2] & num[1] & ~num[0]);
-
     assign seg[2] = (num[3] & num[2] & ~num[0]) | (num[3] & num[2] & num[1]) | (~num[3] & ~num[2] & num[1] & ~num[0]);
-
-
     assign seg[3] =  (~num[3] & ~num[2] & ~num[1] & num[0]) | (~num[3] & num[2] & ~num[1] & ~num[0]) | (num[3] & ~num[2] & num[1] & ~num[0]) | (num[2] & num[1] & num[0]);
-
     assign seg[4] = (~num[3] & num[2] & ~num[1]) |  (~num[3] & num[0]) | (~num[2] & ~num[1] & num[0]);
-
     assign seg[5] =(~num[3] & ~num[2] & num[1]) | (~num[3] & num[1] & num[0]) | (num[3] & num[2] & ~num[1] & num[0]) | (~num[3] & ~num[2] & num[0]);
-
-
     assign seg[6] = (num[3] & num[2] & ~num[1] & ~num[0]) | (~num[3] & num[2] & num[1] & num[0]) | (~num[3] & ~num[2] & ~num[1]);
-
     assign seg[7] = 0;
-    // Anode control logic 
+    
     assign  AN[0] = (sel[2] | sel[1] | sel[0]);
     assign  AN[1] = (sel[2] | sel[1] | ~sel[0]);
     assign  AN[2] = (sel[2] | ~sel[1] | sel[0]);

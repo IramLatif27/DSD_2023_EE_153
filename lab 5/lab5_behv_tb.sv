@@ -6,16 +6,14 @@ module lab5_Behv_tb;
     logic [6:0] seg;
     logic [7:0] AN;
 
-    localparam period = 10;
+localparam period = 10;
 
-    lab5_behv UUT (
+lab5_behv UUT (
         .num(num_tb),
         .sel(sel_tb),
         .seg(seg),
         .AN(AN)
-    );
-
-    // Test sequence
+);
     initial begin
         num_tb = 4'b0000; sel_tb = 3'b000; 
         #period;
@@ -52,7 +50,6 @@ module lab5_Behv_tb;
         $stop;
     end 
 
-    // Monitor the outputs of the DUT
     initial begin
         $monitor("num=%b, sel=%b, seg=%b , AN=%b", 
                  num_tb, sel_tb,seg,AN);

@@ -25,7 +25,6 @@ module lab5_behv(
             4'b1101: seg = 7'b1000010; 
             4'b1110: seg = 7'b0110000; 
             4'b1111: seg = 7'b0111000; 
-            
         endcase
     end
         
@@ -38,8 +37,7 @@ module lab5_behv(
             3'b100: AN = 8'b11101111; 
             3'b101: AN = 8'b11011111; 
             3'b110: AN = 8'b10111111; 
-            3'b111: AN = 8'b01111111; 
-            
+            3'b111: AN = 8'b01111111;  
         endcase
     end
     
